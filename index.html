@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>برنامج تعديل الصور</title>
+  
+</head>
+<body>
+
+  <div class="container">
+    <div class="image-container">
+      <h1>صورة المعاينة</h1>
+      <label for="upload" class="upload-label">رفع صورة</label>
+      <input type="file" id="upload" accept="image/*">
+      <img id="image" src="" alt="اختر صورة">
+      <button id="download">تنزيل الصورة</button>
+    </div>
+
+    <div class="controls-container">
+      <h1>أدوات التعديل</h1>
+      <div class="filters">
+        <label>سطوع</label>
+        <input type="range" id="brightness" min="0" max="200" value="100">
+        
+        <label>تباين</label>
+        <input type="range" id="contrast" min="0" max="200" value="100">
+        
+        <label>تشبع</label>
+        <input type="range" id="saturation" min="0" max="200" value="100">
+        
+        <label>تشويش</label>
+        <input type="range" id="blur" min="0" max="10" value="0">
+        
+        <label>تدرج الألوان</label>
+        <input type="range" id="hue" min="0" max="360" value="0">
+        
+        <label>تدرج رمادي</label>
+        <input type="range" id="grayscale" min="0" max="100" value="0">
+        
+        <label>انعكاس الألوان</label>
+        <input type="range" id="invert" min="0" max="100" value="0">
+        
+        <label>تباعد الألوان (سيبيا)</label>
+        <input type="range" id="sepia" min="0" max="100" value="0">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
